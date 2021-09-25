@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: #f1f1f1;
+  color: #272829;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background: #FDFDFD;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  opacity: 0.9;
+  width: 100%;
+}
+
+#company-name {
+  position: fixed;
+  left: 8rem;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 22px;
+  color: #272829;
+  text-decoration: none;
+}
+
+#hamburger-menu, #close-btn {
+  display: none;
+  padding-top: 0.3rem;
+  cursor: pointer;
+  color: #272829;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 36vw;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #272829;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#hero{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+  background-image: url('https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  transform: rotate(180deg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10rem;
+}
+
+.cta-section {
+  transform: rotate(180deg);
+  margin: 9.375rem 5rem;
+}
+
+#headline {
+  font-size: 2.1vw;
+  color: #FDFDFD;
+}
+
+#cta-button {
+  font-size: 1.34vw;
+  padding: 0.4rem 1.3rem;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  color: #272829;
+  margin: 1rem 3rem;
+}
+
+#cta-button:hover {
+  color: #FDFDFD;
+  background: linear-gradient(140deg, #272829, #585A5B, #9E9F9F, #f1f1f1);
+}
+
+#featured-locations {
+  margin-top: 550px; 
+  max-width: 90%;
+}
+
+.section-header {
+  color: #272829;
+  margin: 2rem 5rem;
+}
+
+.loc-section-container {
+  margin: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+ 
+}
+
+.loc-container {
+  display: flex;
+  align-items: center;
+  width: 40rem;
+  padding: 0.5rem 1.75rem;
+  background-color: #FDFDFD;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.20);
+  margin-bottom: 4rem;
+}
+
+.loc-container:hover, .packages-container:hover {
+  transform: scale(1.03);
+}
+
+.loc-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.loc-description {
+  padding: 2rem;
+  width: 35rem;
+}
+
+.loc-description-title {
+  padding-bottom: 1rem;
+}
+
+#packages {
+  max-width: 90%;
+}
+
+.packages-section-container, .about-us-section-container, .contact-section-container {
+  margin: 2rem 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.packages-container {
+  text-align: center;
+  width: 18rem;
+  padding: 1.75rem;
+  background-color: #FDFDFD;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.20);
+  margin: 0 3rem 4rem 3rem;
+}
+
+.packages-container > h4, .packages-container > ul {
+  padding: 0.8rem;
+}
+
+.packages-feature-list > li {
+  padding: 0.3rem;
+}
+
+.btn {
+  font-size: 1.1vw;
+  padding: 0.4rem 1.3rem;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  background-color: #01A0B1;
+  color: #FDFDFD;
+  margin: 1rem 3rem;
+}
+
+.btn:hover {
+  color: #FDFDFD;
+  background: linear-gradient(140deg, #01567B, #24DBD6);
+}
+
+#about-us, #contact {
+  max-width: 90%;
+}
+
+.about-us-section-container, .contact-section-container {
+  padding-bottom: 4rem;
+}
+
+.about-us-container {
+  margin: 2.7rem 0;
+  padding: 3rem;
+  line-height: 2rem;
+  width: 50rem;
+  background-color: #FDFDFD;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.20);
+}
+
+#video {
+  border-radius: 5px;
+}
+
+.contact-container {
+  margin: 2.7rem 8rem;
+  padding: 3rem 2rem;
+  width: 54rem;
+  background-color: #FDFDFD;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.20);
+}
+
+#form {
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 2rem 2rem 0 2rem; 
+}
+
+#email {
+  width: 20rem;
+  font-size: 1.1vw;
+  padding: 0.4rem 1rem;
+  margin-bottom: 0.5rem;
+  color: #272829;
+  outline-color: #272829; 
+}
+
+#email:focus {
+  outline-color: #272829; 
+}
+
+.contact-container > p {
+  font-size: 1.1rem;
+  padding: 0 2rem;
+}
+
+footer {
+  text-align: right;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 1128px) {
+  
+  .nav-ul {
+    width: 45vw;
+  }
+  
+  #hero {
+    height: 380px;
+  }
+  
+  .cta-section {
+    margin: 6.375rem 4rem;
+  }
+  
+  #headline {
+    font-size: 2.12vw;
+  }
+
+  #cta-button {
+    font-size: 1.42vw;
+    padding: 0.375rem 1.1rem;
+  }
+  
+  #featured-locations {
+    margin-top: 450px;
+  }
+  
+  .loc-container {
+    margin-left: 4rem;
+  }
+  
+  .about-us-container {
+    width: 40rem;
+  }
+  
+  .contact-container {
+    width: 40rem;
+  }
+  
+  #email {
+    width: 22rem;
+    font-size: 1.4vw;
+    padding: 0.4rem 1rem;
+  }
+  
+  .btn {
+    font-size: 1.4vw;
+  }
+  
+}
+
+@media (max-width: 900px) {
+  
+  header {
+    padding: 0 2rem;
+  }
+  
+  #company-name {
+    left: 6rem;
+  }
+  
+  #hamburger-menu {
+    display: block;
+  }
+  
+  #close-btn {
+    display: block;
+    position: fixed;
+    top: 0.3rem;
+    right: 0.5rem;
+  }
+  
+  .nav-ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 25vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0.2rem;
+    background: #FDFDFD;
+    border-radius: 2px;
+    display: none;
+    box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.75); 
+  }
+  
+  .nav-link {
+    font-size: 0.9rem;
+  }
+  
+  #hero {
+    background-image: url('https://images.unsplash.com/photo-1565242913449-72ac29184f55?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+    transform: rotate(0deg);  
+  }
+  
+  .cta-section {
+    transform: rotate(0deg);
+    margin: 10rem 2.5rem;
+  }
+  
+  #headline {
+    font-size: 4.2vw;
+  }
+
+  #cta-button {
+    font-size: 2.2vw;
+    padding: 0.4rem 1.3rem;
+    margin: 1rem 1rem;
+  }
+  
+  .section-header {
+    margin: 2rem 3rem;
+  }
+  
+  .loc-section-container, .packages-section-container, .about-us-section-container, .contact-section-container {
+    margin: 2rem 2rem;
+    justify-content: space-around;
+  }
+  
+  .loc-container {
+    flex-direction: column;
+    width: 25em;
+    padding: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .loc-description {
+    width: 25rem;
+  }
+  
+  .about-us-container {
+    width: 35rem;
+  }
+  
+  .contact-container {
+    width: 35rem;
+    margin: 2.7rem 3rem;
+    padding: 2rem 0.5rem;
+  }
+  
+  #email {
+    width: 15rem;
+    font-size: 2vw;
+  }
+  
+  .btn {
+    font-size: 2.1vw
+  }
+  
+}
+
+@media (max-width: 550px) {
+  
+  #header-img {
+    width: 45px;
+  }
+  
+  #company-name {
+    left: 5rem;
+    font-size: 19px;
+  }
+  
+  #headline {
+    font-size: 5.4vw;
+  }
+
+  #cta-button {
+    font-size: 2.8vw;
+    padding: 0.4rem 1.3rem;
+    margin: 1rem 1rem;
+  }
+  
+  .nav-ul {
+    width: 10rem;
+  }
+  
+  .loc-container {
+    width: 22rem;
+  }
+  
+  .loc-description-title {
+    text-align: center;
+  }
+  
+  .loc-description {
+    width: 22rem;
+  }
+  
+  .about-us-container {
+    width: 35rem;
+  }
+  
+  #form {
+    max-width: 10rem;
+  }
+  
+  .contact-container > p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  
+  #email {
+    width: 10.7rem;
+    font-size: 2.5vw;
+  }
+  
+  .btn {
+    font-size: 3vw
+  }
+  
+}
+
+@media (max-width: 425px) {
+  
+  #hamburger-menu {
+    position: fixed;
+    top: 0.1rem;
+    right: 0.1rem;
+  }
+  
+  #close-btn {
+    top: 3rem;
+    right: 0.1rem;
+  }
+  
+  .nav-ul {
+    top: 2.8rem;
+    box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  #headline {
+    font-size: 6.2vw;
+  }
+  
+  #cta-button {
+    font-size: 3.5vw;
+    margin-left: 0.2rem;
+  }
+  
+  .loc-section-container, .packages-section-container, .about-us-section-container, .contact-section-container {
+    margin: 2rem 1rem;
+  }
+  
+  .section-header {
+    margin: 2rem 1rem;
+    font-size: 1.35rem;
+  }
+  
+  .loc-container {
+    width: 16rem;
+  }
+  
+  .loc-image {
+    width: 210px;
+    height: 210px;
+  }
+  
+  .loc-description {
+    width: 16rem;
+  }
+  
+  #video {
+    width: 265px;
+    height: 200px;
+  }
+  
+  #email {
+    font-size: 3vw;
+  }
+  
+  .btn {
+    font-size: 3.75vw;
+  }
+  
+  footer {
+    font-size: 0.75rem;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
