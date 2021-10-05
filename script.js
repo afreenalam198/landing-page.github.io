@@ -1,16 +1,13 @@
-
 const navUl = document.querySelector(".nav-ul");
 const hamburger = document.getElementById('hamburger-menu');
 const closeBtn = document.getElementById('close-btn');
 
 const show = () => {
-  navUl.style.display = 'flex';
-  hamburger.style.display = 'none';
+  navUl.classList.add('show');
 }
 
 const close = () => {
-  navUl.style.display = 'none';
-  hamburger.style.display = 'block';
+  navUl.classList.remove('show');
 }
 
 
