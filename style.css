@@ -344,8 +344,11 @@ footer {
     padding: 4rem 0.2rem;
     background: #FDFDFD;
     border-radius: 2px;
-    display: none;
     box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.75); 
+  }
+  
+  .nav-ul.show {
+    display: flex;
   }
   
   .nav-link {
